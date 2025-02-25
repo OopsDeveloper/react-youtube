@@ -8,6 +8,7 @@ export default function SearchHeader() {
     const [text, setText] = useState('');
     const handleSubmit = (e) => {
         e.preventDefault();
+        alert('youtube api 한도로 mock data 사용 중');
         navigate(`/videos/${text}`);
     };
     useEffect(() => setText(keyword || ''), [keyword]);
